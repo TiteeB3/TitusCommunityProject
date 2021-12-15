@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">TITUS</string>
+    <string name="ornamental_plants_manual">Ornamental Plants Manual</string>
+    <string name="open_search_form">Open search form</string>
+    <string name="search_form">Search form</string>
+    <string name="titee_works_com">titee_works.com</string>
+    <string name="select_type_or_category">Select Type or Category</string>
+    <string name="search">SEARCH</string>
+    <string name="get_started">Get started</string>
+    <string name="app_info">App info.</string>
+    <string name="select_a_type_or_category">SELECT A TYPE OR CATEGORY</string>
+    <string name="select_a_category">SELECT A CATEGORY</string>
+    <string name="botanical_name">Botanical_name</string>
+    <string name="acalypha_wilkesiana">Acalypha_wilkesiana</string>
+    <string name="acalypha_tricolor_irish_petticoat_cupper_leaf_acalypha_jacob_s_coat">Acalypha tricolor/ Irish petticoat/cupper leaf acalypha/Jacob\'s coat</string>
+    <string name="euphobiaceae">Euphobiaceae</string>
+    <string name="blight_light">Blight light</string>
+    <string name="title">Title</string>
+    <string name="sample_description">Sample description...</string>
+    <string name="picture">picture</string>
+    <string name="image_of_the_plant">image of the plant</string>
+    <string name="common_name">common name</string>
+    <string name="family">family</string>
+    <string name="uses_or_type">uses_or_type</string>
+    <string name="method_of_propagation">method_of_propagation</string>
+    <string name="origin">origin</string>
+    <string name="special_advantage_or_disadvantage">special_advantage_or_disadvantage</string>
+    <string name="condition">condition</string>
+    <string name="plant_description">plant_description</string>
+    <string name="common_diseases_and_infection">common_diseases_and_infection</string>
+    <string name="settings">settings</string>
+    <string name="enter_only_the_keyword">Enter only the keyword</string>
+    <string name="listen">Listen</string>
+    <string name="please_enter_only_the_keyword">please_enter_only_the_keyword</string>
+    <string name="sort">SORT</string>
+    <string name="pronounce_botanical_name">pronounce botanical name</string>
+
+
+    <string name="txtCorrectScore">"You Scored %1$s Out Of %2$s Correct."</string>
+
+</resources>

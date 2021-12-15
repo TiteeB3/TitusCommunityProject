@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pluralsight_color_for_welcomescreen"
+    tools:context=".WelcomeScreen">
+    <RelativeLayout
+        android:id="@+id/firstlayertop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:id="@+id/firstimage"
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:src="@drawable/gadslogo"/>
+        <ImageView
+            android:layout_marginTop="1dp"
+            android:id="@+id/secondimage"
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:src="@drawable/gadslogo"
+            android:layout_below="@+id/firstimage"/>
+        <ImageView
+            android:id="@+id/thirdimage"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:src="@drawable/gadslogo"
+            android:layout_below="@+id/secondimage"/>
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:id="@+id/forthimage"
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:src="@drawable/gadslogo"
+            android:layout_below="@+id/thirdimage"/>
+
+
+        <RelativeLayout
+            android:id="@+id/secondlayertobetransparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pluralsight_color_for_welcomescreen">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:shadowColor="#EC008C"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="3"
+                android:text="Titee Works.com"
+                android:textAlignment="center"
+                android:textColor="#3C192E"
+                android:textSize="12dp"
+                android:textStyle="italic" />
+
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"
+                android:fadingEdge="horizontal"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/progressbar"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryPage"
+    android:background="@drawable/pluralsight_color_for_welcomescreen">
+
+    <RelativeLayout
+        android:id="@+id/categoryPageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_for_category_firsttransparentlayer">
+
+
+        <TextView
+            android:id="@+id/textview_in_studies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/coming_soon"
+            android:shadowColor="@color/black"
+            android:shadowDx="3"
+            android:shadowDy="5"
+            android:shadowRadius="5"
+            android:text="SELECT A CATEGORY"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/appinfobutton"
+            android:layout_marginStart="3dp"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_baseline_priority_high_24" />
+
+
+
+        <ScrollView
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textview_in_studies">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardforhouseplants"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_for_category_cardlayout">
+
+                        <TextView
+                            android:id="@+id/titleinhouseplants"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/coming_soon"
+                            android:text="HOUSE PLANTS"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:id="@+id/extratextinhouseplants"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="A house plant is a plant that is grown indoor. They are also grown in places such as residencees and offices and are commonly grown for decorative purposes"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/titleinhouseplants"
+                            android:layout_toRightOf="@+id/imageinhousplants"
+                            android:layout_marginTop="9dp" />
+                        <ImageView
+                            android:id="@+id/imageinhousplants"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/category_hp_new"
+                            android:layout_below="@+id/titleinhouseplants"
+                            android:layout_marginBottom="10dp"/>
+
+                        <Button
+                            android:id="@+id/HousePlants"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardforherbsandmedicinal"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_below="@+id/cardforhouseplants"
+                    android:layout_marginTop="8dp"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_for_category_cardlayout">
+
+                        <TextView
+                            android:id="@+id/titleinherbsandmedicinal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="HERBS AND MEDICINAL PLANTS"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/coming_soon"/>
+                        <TextView
+                            android:id="@+id/extratextinherbsandmedinal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Herbs and Medicinal plabnts has some  medicinal properties, and they are usually used to cure certain diseases or infections aside the beautification purposes."
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/titleinherbsandmedicinal"
+                            android:layout_toRightOf="@+id/imageinherbsandmedicinal"
+                            android:layout_marginTop="9dp" />
+                        <ImageView
+                            android:id="@+id/imageinherbsandmedicinal"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/category_medicinalp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_below="@+id/titleinherbsandmedicinal"/>
+
+                        <Button
+                            android:id="@+id/herbsAndMedicinalPlants"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardforfoliagetrees"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_below="@+id/cardforherbsandmedicinal"
+                    android:layout_marginTop="8dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_for_category_cardlayout">
+
+                        <TextView
+                            android:id="@+id/titleforfoliagetrees"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="FOLIAGE TREES"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/coming_soon"/>
+                        <TextView
+                            android:id="@+id/extratitleforfoliagetrees"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The give all year round display, They are expected to live permanently and They are grown for their foliage or stems rather than for flowers"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/titleforfoliagetrees"
+                            android:layout_toRightOf="@+id/imageforfoliagetrees"
+                            android:layout_marginTop="9dp" />
+                        <ImageView
+                            android:id="@+id/imageforfoliagetrees"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/category_foliagetr"
+                            android:layout_below="@+id/titleforfoliagetrees"
+                            android:layout_marginBottom="10dp"/>
+
+                        <Button
+                            android:id="@+id/FoliageTrees"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardforfoliageshrubs"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_below="@+id/cardforfoliagetrees"
+                    android:layout_marginTop="8dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_for_category_cardlayout">
+
+                        <TextView
+                            android:id="@+id/titleforfoliageshrubs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="FOLIAGE SHRUBS"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/coming_soon"/>
+                        <TextView
+                            android:id="@+id/extratitlefforfoliageshrubs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Shrubs are generally suitable for growing as hedges,
+                            shelter belts, bedding plants, specimen and shrubberies."
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/titleforfoliageshrubs"
+                            android:layout_toRightOf="@+id/imageforfoliageshrubsshrubs"
+                            android:layout_marginTop="9dp" />
+                        <ImageView
+                            android:id="@+id/imageforfoliageshrubsshrubs"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/category_foliageshr"
+                            android:layout_below="@+id/titleforfoliageshrubs"
+                            android:layout_marginBottom="10dp"/>
+
+                        <Button
+                            android:id="@+id/FoliageShrubs"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardforfloweringtrees"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_below="@+id/cardforfoliageshrubs"
+                    android:layout_marginTop="8dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_for_category_cardlayout">
+
+                        <TextView
+                            android:id="@+id/titleforfloweringtrees"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="FLOWERING TREES"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/coming_soon"/>
+                        <TextView
+                            android:id="@+id/extratitleforfloweringtrees"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="hdkdrng hgdhgdhg dhbngdsjuie hjh ahsg jr nfvfb vjyhuru hghsf hfegj fjf jf "
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/titleforfloweringtrees"
+                            android:layout_toRightOf="@+id/imageforfloweringtrees"
+                            android:layout_marginTop="9dp" />
+                        <ImageView
+                            android:id="@+id/imageforfloweringtrees"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/category_floweringtr"
+                            android:layout_below="@+id/titleforfloweringtrees"
+                            android:layout_marginBottom="10dp"/>
+
+                        <Button
+                            android:id="@+id/FloweringTrees"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardforfloweringshrubs"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_below="@+id/cardforfloweringtrees"
+                    android:layout_marginTop="8dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_for_category_cardlayout">
+
+                        <TextView
+                            android:id="@+id/titleforfloweringshrubs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="FLOWERING TREES"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/coming_soon"/>
+                        <TextView
+                            android:id="@+id/extratitleforfloweringshrubs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Shrubs are generally suitable for growing as hedges,
+                            shelterbelts, bedding plants, specimen and shrubberies. Shrubs may be
+                            grown singly or in groups in the landscape."
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/titleforfloweringshrubs"
+                            android:layout_toRightOf="@+id/imageforfloweringshrubs"
+                            android:layout_marginTop="9dp" />
+                        <ImageView
+                            android:id="@+id/imageforfloweringshrubs"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/category_foliageshr"
+                            android:layout_below="@+id/titleforfloweringshrubs"
+                            android:layout_marginBottom="10dp"/>
+
+                        <Button
+                            android:id="@+id/floweringshrubs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardforcreepingplants"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_below="@+id/cardforfloweringshrubs"
+                    android:layout_marginTop="8dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_for_category_cardlayout">
+
+                        <TextView
+                            android:id="@+id/titleforcreepingplants"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CREEPING PLANTS"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/coming_soon"/>
+                        <TextView
+                            android:id="@+id/extratiltleforcreepingplants"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="hdkdrng hgdhgdhg dhbngdsjuie hjh ahsg jr nfvfb vjyhuru hghsf hfegj fjf jf "
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/titleforcreepingplants"
+                            android:layout_toRightOf="@+id/imageforcreepingplants"
+                            android:layout_marginTop="9dp" />
+                        <ImageView
+                            android:id="@+id/imageforcreepingplants"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/category_creepingpl"
+                            android:layout_below="@+id/titleforcreepingplants"
+                            android:layout_marginBottom="10dp"/>
+
+                        <Button
+                            android:id="@+id/CreepingPlants"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardforclimbingplants"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_below="@+id/cardforcreepingplants"
+                    android:layout_marginTop="8dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_for_category_cardlayout">
+
+                        <TextView
+                            android:id="@+id/titleforclimbingplants"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CLIMBING PLANTS"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/coming_soon"/>
+                        <TextView
+                            android:id="@+id/extratitleforclimbingplants"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Climbing plants consist of both perennial woody
+                            herbaceous and annuals plants."
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/titleforclimbingplants"
+                            android:layout_toRightOf="@+id/imageforclimbingplants"
+                            android:layout_marginTop="9dp" />
+                        <ImageView
+                            android:id="@+id/imageforclimbingplants"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/category_climbingpl"
+                            android:layout_below="@+id/titleforclimbingplants"
+                            android:layout_marginBottom="10dp"/>
+
+                        <Button
+                            android:id="@+id/ClimbingPlants"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardforconifers"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_below="@+id/cardforclimbingplants"
+                    android:layout_marginTop="8dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_for_category_cardlayout">
+
+                        <TextView
+                            android:id="@+id/titleforconifers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="CONIFERS"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/coming_soon"/>
+                        <TextView
+                            android:id="@+id/extratitleforconifers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="hdkdrng hgdhgdhg dhbngdsjuie hjh ahsg jr nfvfb vjyhuru hghsf hfegj fjf jf "
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/titleforconifers"
+                            android:layout_toRightOf="@+id/imageforconifers"
+                            android:layout_marginTop="9dp" />
+                        <ImageView
+                            android:id="@+id/imageforconifers"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/category_conifers"
+                            android:layout_below="@+id/titleforconifers"
+                            android:layout_marginBottom="10dp"/>
+
+                        <Button
+                            android:id="@+id/Conifers"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardforpalmsandpalmslikes"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_below="@+id/cardforconifers"
+                    android:layout_marginTop="8dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_for_category_cardlayout">
+
+                        <TextView
+                            android:id="@+id/titleforpalmsandpalmlikes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PALMS AND PALM-LIKES"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/coming_soon"/>
+                        <TextView
+                            android:id="@+id/extratitleforpalmsandpalmlikes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Palms are monocotyledonous plants characterised mostly by a straight trunk with a
+                            crown of fan-shaped or feathery leaves at the top."
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/titleforpalmsandpalmlikes"
+                            android:layout_toRightOf="@+id/imageforpalsandpalmlikes"
+                            android:layout_marginTop="9dp" />
+                        <ImageView
+                            android:id="@+id/imageforpalsandpalmlikes"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/category_palms_n_palml"
+                            android:layout_below="@+id/titleforpalmsandpalmlikes"
+                            android:layout_marginBottom="10dp"/>
+
+                        <Button
+                            android:id="@+id/PalmsAndPalmLike"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardforsucculents"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_below="@+id/cardforpalmsandpalmslikes"
+                    android:layout_marginTop="8dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_for_category_cardlayout">
+
+                        <TextView
+                            android:id="@+id/titleforsucculents"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="SUCCULENTS"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/coming_soon"/>
+                        <TextView
+                            android:id="@+id/extratitleforsucculents"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="hdkdrng hgdhgdhg dhbngdsjuie hjh ahsg jr nfvfb vjyhuru hghsf hfegj fjf jf "
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/titleforsucculents"
+                            android:layout_toRightOf="@+id/imageforsucculents"
+                            android:layout_marginTop="9dp" />
+                        <ImageView
+                            android:id="@+id/imageforsucculents"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/category_succulents"
+                            android:layout_below="@+id/titleforsucculents"
+                            android:layout_marginBottom="10dp"/>
+
+                        <Button
+                            android:id="@+id/Succulents"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@color/black" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardforannualsandgroundcovers"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_below="@+id/cardforsucculents"
+                    android:layout_marginTop="8dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_for_category_cardlayout">
+
+                        <TextView
+                            android:id="@+id/titleforannualsandgroundcovers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ANNUALS AND GROUND COVERS"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/coming_soon"/>
+                        <TextView
+                            android:id="@+id/extratitleforannualsandgroundcovers"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ground cover plants are very useful on slopes irregular
+                             surfacesand in rocky areas where mowing of grass is not possible"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/titleforannualsandgroundcovers"
+                            android:layout_toRightOf="@+id/imageforannualsandgroundcovers"
+                            android:layout_marginTop="9dp" />
+                        <ImageView
+                            android:id="@+id/imageforannualsandgroundcovers"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/category_annuals_n_groundcovers"
+                            android:layout_below="@+id/titleforannualsandgroundcovers"
+                            android:layout_marginBottom="10dp"/>
+
+                        <Button
+                            android:id="@+id/AnnualsAndGroundCovers"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardforturfgrasses"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_below="@+id/cardforannualsandgroundcovers"
+                    android:layout_marginTop="8dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_for_category_cardlayout">
+
+                        <TextView
+                            android:id="@+id/titleforturfgrasses"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TURF GRASSES"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/coming_soon"/>
+                        <TextView
+                            android:id="@+id/extratitleforturfgrasses"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Turf grasses are mainly for lawns ad playing fields."
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/titleforturfgrasses"
+                            android:layout_toRightOf="@+id/imageforturfgrasses"
+                            android:layout_marginTop="9dp" />
+                        <ImageView
+                            android:id="@+id/imageforturfgrasses"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/category_turfgrass"
+                            android:layout_below="@+id/titleforturfgrasses"
+                            android:layout_marginBottom="10dp"/>
+
+                        <Button
+                            android:id="@+id/TurfGrasses"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardforwaterplants"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="20dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_below="@+id/cardforturfgrasses"
+                    android:layout_marginTop="8dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient_for_category_cardlayout">
+
+                        <TextView
+                            android:id="@+id/titleforwaterplants"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="WATER PLANTS"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textSize="20dp"
+                            android:fontFamily="@font/coming_soon"/>
+                        <TextView
+                            android:id="@+id/extratitleforwaterplants"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="hdkdrng hgdhgdhg dhbngdsjuie hjh ahsg jr nfvfb vjyhuru hghsf hfegj fjf jf "
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/titleforwaterplants"
+                            android:layout_toRightOf="@+id/imageforwaterplants"
+                            android:layout_marginTop="9dp"/>
+                        <ImageView
+                            android:id="@+id/imageforwaterplants"
+                            android:layout_width="150dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/category_waterplants"
+                            android:layout_below="@+id/titleforwaterplants"
+                            android:layout_marginBottom="10dp"/>
+
+                        <Button
+                            android:id="@+id/WaterPlants"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

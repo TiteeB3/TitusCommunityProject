@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/drawable-v24/gradient_for_category_cardlayout.xml" value="0.21354166666666666" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/drawable-v24/ic_action_sort.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/drawable-v24/progressbar.xml" value="0.13796296296296295" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/drawable-v24/search_icon.xml" value="0.1" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/drawable/gradient_for_category_firsttransparentlayer.xml" value="0.1" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/drawable/pluralsight_color_for_welcomescreen.xml" value="0.1" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_annuals_and_ground_covers.xml" value="0.1" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_app_information_page.xml" value="0.11737089201877934" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_category_page.xml" value="0.1" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_climbing_plants.xml" value="0.1" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_conifers.xml" value="0.1" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_creeping_plants.xml" value="0.1" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_detailed_infomation_of_plants.xml" value="0.1" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_flowering_shrubs.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_flowering_trees.xml" value="0.1" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_foliage_shrubs.xml" value="0.1" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_foliage_trees.xml" value="0.1" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_herbs_and_medicinal_plants.xml" value="0.1" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_houseplants.xml" value="0.1" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_main.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_model_for_plant_list.xml" value="0.1" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_palms_and_palm_likes.xml" value="0.1" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_succulents.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_turf_grasses.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_water_plants.xml" value="0.19739583333333333" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/activity_welcome_screen.xml" value="0.1" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/layout/model_for_plant_list.xml" value="0.1" />
+        <entry key="..\:/Users/titee/OneDrive/Desktop/PROJECT/TitusCommunityProject/app/src/main/res/menu/plant_list_menu.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

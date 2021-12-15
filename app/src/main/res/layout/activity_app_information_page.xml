@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_for_category_cardlayout"
+    android:theme="@style/Theme.Design"
+    tools:context=".AppInformationPage">
+
+    <RelativeLayout
+        android:id="@+id/staticLayout"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:id="@+id/imagestatic"
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:src="@drawable/gadslogo"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/staticLayout">
+
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:id="@+id/firstimage"
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:src="@drawable/gadslogo"/>
+        <ImageView
+            android:layout_marginTop="1dp"
+            android:id="@+id/secondimage"
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:src="@drawable/gadslogo"
+            android:layout_below="@+id/firstimage"/>
+        <ImageView
+            android:id="@+id/thirdimage"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:src="@drawable/gadslogo"
+            android:layout_below="@+id/secondimage"/>
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:id="@+id/forthimage"
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:src="@drawable/gadslogo"
+            android:layout_below="@+id/thirdimage"/>
+
+        <ScrollView
+            android:id="@+id/scrowviewtobetransparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_for_category_cardlayout">
+
+            <RelativeLayout
+                android:id="@+id/relativeviewtotransparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/devtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:text="DEVELOPER'S INFO"
+                    android:textColor="#1DF606"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:id="@+id/devpicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/devtext"
+                    android:src="@drawable/developerpicture"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/developerinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TITUS is a young scientist and I wish to be a developer as well. I want to know more about android. I wish to be able to write perfect codes in both Kotlin and Java to exact express my expectation in the future.
+I am from Agriculture academic background, and have never been in an IT or any Computer learning course
+before except GADS 2021 but yet still I do have the passion to write android codes. I developed interest in coding at the time that
+I thought of doing something better to help students study and identify ornamental plants when I was a teaching assistant (T.A), but couldn't locate an android developer to help
+me with the android app. This remained until I was enrolled in the GADS 2021, in-fact my studies on pluralsight was enjoyable and I am happy that I have at least gained knowledge that
+have let me achieved my aim.
+Though I have enrolled on a Masters' Programme to pursue a two (2) Master of Philosophy (Plant Pathology) in 2021/2022 academic year but I promise to continue to study more on coding and extend these new skills in
+my academic field. I wish to Have an app on Plant Pathology in the future."
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/devpicture"/>
+
+
+                <TextView
+                    android:id="@+id/aimofapp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="25dp"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:text="AIM OF THIS APP"
+                    android:textColor="#1DF606"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/developerinfo"/>
+
+                <TextView
+                    android:id="@+id/aim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This App is in fulfillment of GADS 2021 community project.
+My aim to help students, teachers, practitioners and other people study, identify ornamental plants without necessarily being in the
+class room."
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/aimofapp"/>
+
+
+                <TextView
+                    android:id="@+id/improve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="25dp"
+                    android:textAllCaps="true"
+                    android:text="FUTURE EXPECTATIONS OF THIS APP"
+                    android:textColor="#1DF606"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/aim"/>
+
+                <TextView
+                    android:id="@+id/futureimproement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="More plants will be added. A second clear picture of each plant will be displayed in the plant full
+details page. A quiz feature will also be added so that students can test themselves after study. The UI of the app will be improved
+and I will study more and make this App looks more professional."
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/improve"/>
+
+
+
+                <TextView
+                    android:id="@+id/ref"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="25dp"
+                    android:textAllCaps="true"
+                    android:text="REFERENCES OF THIS APP"
+                    android:textColor="#1DF606"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/futureimproement"/>
+
+                <TextView
+                    android:id="@+id/references"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pluralsight colors and videos where used for the app. Studies extended to youtube. Picture of plants were downloaded
+from the internet and edited. The GADS 2021 logo is used throught the App."
+                    android:textSize="16dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/ref"/>
+
+
+
+        </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

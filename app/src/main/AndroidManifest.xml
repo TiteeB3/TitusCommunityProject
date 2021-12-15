@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tituscommunityproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TitusCommunityProject">
+        <activity
+            android:name=".AppInformationPage"
+            android:exported="false" />
+        <activity
+            android:name=".Succulents"
+            android:exported="false" />
+        <activity
+            android:name=".WaterPlants"
+            android:exported="false" />
+        <activity
+            android:name=".TurfGrasses"
+            android:exported="false" />
+        <activity
+            android:name=".PalmsAndPalmLikes"
+            android:exported="false" />
+        <activity
+            android:name=".HerbsAndMedicinalPlants"
+            android:exported="false" />
+        <activity
+            android:name=".FoliageTrees"
+            android:exported="false" />
+        <activity
+            android:name=".FoliageShrubs"
+            android:exported="false" />
+        <activity
+            android:name=".FloweringTrees"
+            android:exported="false" />
+        <activity
+            android:name=".FloweringShrubs"
+            android:exported="false" />
+        <activity
+            android:name=".DetailedInfomationOfPlants"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".CreepingPlants"
+            android:exported="false" />
+        <activity
+            android:name=".Conifers"
+            android:exported="false" />
+        <activity
+            android:name=".ClimbingPlants"
+            android:exported="false" />
+        <activity
+            android:name=".AnnualsAndGroundCovers"
+            android:exported="false" />
+        <activity
+            android:name=".Houseplants"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeScreen"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
