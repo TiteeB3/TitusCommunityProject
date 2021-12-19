@@ -617,7 +617,8 @@
                             android:id="@+id/extratitleforsucculents"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="hdkdrng hgdhgdhg dhbngdsjuie hjh ahsg jr nfvfb vjyhuru hghsf hfegj fjf jf "
+                            android:text="succulent plants, also known as succulents, are plants with parts that are thickened, fleshy, and engorged,
+                            usually to retain water in arid climates or soil conditions"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:layout_below="@+id/titleforsucculents"
@@ -780,7 +781,9 @@
                             android:id="@+id/extratitleforwaterplants"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="hdkdrng hgdhgdhg dhbngdsjuie hjh ahsg jr nfvfb vjyhuru hghsf hfegj fjf jf "
+                            android:text="Aquatic plants are plants that have adapted to living in aquatic environments.
+                            They are also referred to as hydrophytes or macrophytes to distinguish them from algae and other microphytes.
+                            A macrophyte is a plant that grows in or near w"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:layout_below="@+id/titleforwaterplants"
