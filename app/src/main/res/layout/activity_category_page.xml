@@ -336,7 +336,7 @@
                             android:id="@+id/titleforfloweringshrubs"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="FLOWERING TREES"
+                            android:text="FLOWERING SHRUBS"
                             android:textColor="@color/black"
                             android:textStyle="bold"
                             android:textAlignment="center"
@@ -401,7 +401,8 @@
                             android:id="@+id/extratiltleforcreepingplants"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="hdkdrng hgdhgdhg dhbngdsjuie hjh ahsg jr nfvfb vjyhuru hghsf hfegj fjf jf "
+                            android:text="Creeping plants or creepers are generally considered to be small, viny plants that grow close to the ground.
+                            They are also referred to as procumbent plants."
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:layout_below="@+id/titleforcreepingplants"
@@ -509,7 +510,8 @@
                             android:id="@+id/extratitleforconifers"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="hdkdrng hgdhgdhg dhbngdsjuie hjh ahsg jr nfvfb vjyhuru hghsf hfegj fjf jf "
+                            android:text="Climbing plants are plants which climb up trees and other tall objects.
+                            Many of them are vines whose stems twine round trees and branches"
                             android:textAlignment="center"
                             android:textColor="@color/black"
                             android:layout_below="@+id/titleforconifers"
