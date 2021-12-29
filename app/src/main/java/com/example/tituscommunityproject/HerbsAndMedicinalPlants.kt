@@ -1,190 +1,173 @@
-package com.example.tituscommunityproject;
+package com.example.tituscommunityproject
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.MenuItemCompat;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.RecyclerView
+import com.example.tituscommunityproject.AdapterForPlantList
+import android.content.SharedPreferences
+import android.util.DisplayMetrics
+import android.view.WindowManager
+import android.os.Bundle
+import com.example.tituscommunityproject.R
+import android.graphics.drawable.ColorDrawable
+import com.example.tituscommunityproject.ModelForPlantList
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.core.view.MenuItemCompat
+import android.content.DialogInterface
+import android.content.res.Configuration
+import android.graphics.Color
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.SearchView
+import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AlertDialog
+import java.util.*
 
-import android.content.DialogInterface;
-import android.content.SharedPreferences;
-import android.content.res.Configuration;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.os.Bundle;
-import android.util.DisplayMetrics;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.WindowManager;
-import android.widget.SearchView;
-
-import java.util.ArrayList;
-import java.util.Collections;
-
-public class HerbsAndMedicinalPlants extends AppCompatActivity {
-
-    RecyclerView mRecyclerView;
-    AdapterForPlantList myAdapter;
-    SharedPreferences pref;
-
+class HerbsAndMedicinalPlants : AppCompatActivity() {
+    var mRecyclerView: RecyclerView? = null
+    var myAdapter: AdapterForPlantList? = null
+    var pref: SharedPreferences? = null
 
     /// This together with the manifest code 'android:configChanges="keyboardHidden|orientation|screenSize"' Acoount for disabling of notificatio bar
-    public  void adjustFontScale(Configuration configuration, float scale) {
-
-
-        configuration.fontScale = scale;
-        DisplayMetrics metrics = getResources().getDisplayMetrics();
-        WindowManager wm = (WindowManager) getSystemService(WINDOW_SERVICE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        wm.getDefaultDisplay().getMetrics(metrics);
-        metrics.scaledDensity = configuration.fontScale * metrics.density;
-        getBaseContext().getResources().updateConfiguration(configuration, metrics);
-
+    fun adjustFontScale(configuration: Configuration, scale: Float) {
+        configuration.fontScale = scale
+        val metrics = resources.displayMetrics
+        val wm = getSystemService(WINDOW_SERVICE) as WindowManager
+        window.setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        )
+        wm.defaultDisplay.getMetrics(metrics)
+        metrics.scaledDensity = configuration.fontScale * metrics.density
+        baseContext.resources.updateConfiguration(configuration, metrics)
     }
 
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_herbs_and_medicinal_plants);
-
-        adjustFontScale( getResources().getConfiguration(),1.0f);
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_herbs_and_medicinal_plants)
+        adjustFontScale(resources.configuration, 1.0f)
 
         // Animation when activity is launching
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
-
-
-
-
-        pref = this.getSharedPreferences("MY Data", MODE_PRIVATE);
-
-        mRecyclerView = findViewById(R.id.recycler_view);
-
-
-        showData();
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right)
+        pref = getSharedPreferences("MY Data", MODE_PRIVATE)
+        mRecyclerView = findViewById(R.id.recycler_view)
+        showData()
 
         // Changing ActionBar Color
-        ActionBar actionBar;
-        actionBar = getSupportActionBar();
-        actionBar.setTitle("HERBS AND MEDICINAL PLANTS");
-        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor("#EC008C"));
-        actionBar.setBackgroundDrawable(colorDrawable);
+        val actionBar: ActionBar?
+        actionBar = supportActionBar
+        actionBar!!.title = "HERBS AND MEDICINAL PLANTS"
+        val colorDrawable = ColorDrawable(Color.parseColor("#EC008C"))
+        actionBar.setBackgroundDrawable(colorDrawable)
 
         //Set recyclerView background color
-        RecyclerView recyclerView;
-        recyclerView = findViewById(R.id.recycler_view);
-        recyclerView.getBackground().setAlpha(130);
-
-
-
+        val recyclerView: RecyclerView
+        recyclerView = findViewById(R.id.recycler_view)
+        recyclerView.background.alpha = 130
     }
 
+    private fun showData() {
+        val ModelForPlantsLists = ArrayList<ModelForPlantList>()
 
-    private void showData() {
+//        Will Update this List
 
-        ArrayList<ModelForPlantList> ModelForPlantsLists = new ArrayList<>();
-
-
-        ////CHECK THE NUMBERING WELL
-        //1//
-        ModelForPlantList p = new ModelForPlantList();
-        p.setTitle("Adenanthera pavonina");
-        p.setDescription("LIFE CYCLE: Perennial  GROWING ZONE: Tropical      LEAF TYPE: Simple    FRUITING: Yes   MATURED HEIGHT:            LEAF SHAPE: Elliptical, Lanceolate, Oblong              LEAF MARGIN:  Entire       LEAF LENGTH:  6 inches        LEAF COLOR:  Green, Variegated                   LEAF ARRANGEMENT:  Alternate            STEM CHARACTERISTICS:  Stem color is gray or silver, it has no aroma. It is also Erect, becoming decumbent, encircled with leaf scars.");
-        p.setImg(R.drawable.adenantherapavonina);
-        p.setImageView3(R.drawable.secondpicture);
-        p.setCommon_name("Bead tree");
-        p.setFamily("Mimosoideae");
-        p.setMethod_of_propagation("Seed");
-        p.setUses_or_type("Avenue trees, shade plants");
-        p.setCondition("");
-        p.setSerial_numbers("001");
-        p.setOrigin("");
-        p.setCommon_disease_and_infection("");
-        p.setPronounce_botanical_name("{}");
-        ModelForPlantsLists.add(p);
+        var p = ModelForPlantList()
+        p.title = "Adenanthera pavonina"
+        p.description = "LIFE CYCLE: Perennial  GROWING ZONE: Tropical      LEAF TYPE: Simple    FRUITING: Yes   MATURED HEIGHT:            LEAF SHAPE: Elliptical, Lanceolate, Oblong              LEAF MARGIN:  Entire       LEAF LENGTH:  6 inches        LEAF COLOR:  Green, Variegated                   LEAF ARRANGEMENT:  Alternate            STEM CHARACTERISTICS:  Stem color is gray or silver, it has no aroma. It is also Erect, becoming decumbent, encircled with leaf scars."
+        p.img = R.drawable.adenantherapavonina
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Bead tree"
+        p.family = "Mimosoideae"
+        p.method_of_propagation = "Seed"
+        p.uses_or_type = "Avenue trees, shade plants"
+        p.condition = ""
+        p.serial_numbers = "001"
+        p.origin = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = "{}"
+        ModelForPlantsLists.add(p)
 
 
-        String msortSettings = pref.getString("Sort", "ascending");
-        if (msortSettings.equals("ascending")){
-            Collections.sort(ModelForPlantsLists, ModelForPlantList.By_TITLE_ASCENDING);
+        p = ModelForPlantList()
+        p.title = "Achillea millefolium"
+        p.description = "LIFE CYCLE:,  GROWING ZONE:,  LEAF TYPE:,  FRUITING:,  MATURED HEIGHT:,  LEAF SHAPE:, LEAF MARGIN:,  LEAF LENGTH:,  LEAF COLOR:,  STEM CHARACTERISTICS:"
+        p.img = R.drawable.achilleamillefolium
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Yarrow, Gordaldo, Nosebleed Plant, Devil's Nettle"
+        p.family = "Asteraceae"
+        p.origin = "Asia, Europe, North America"
+        p.special_advantage_or_disadvantage = "Medicinal"
+        p.condition = "Does well in bright light, on a good drainage soil,and it need about 3-6 feet space to plant"
+        p.uses_or_type = "Flowering house plants"
+        p.method_of_propagation = "Stem cuttings"
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = "{}"
+        p.serial_numbers = "002"
+        ModelForPlantsLists.add(p)
+
+
+        val msortSettings = pref!!.getString("Sort", "ascending")
+        if (msortSettings == "ascending") {
+            Collections.sort(ModelForPlantsLists, ModelForPlantList.By_TITLE_ASCENDING)
+        } else if (msortSettings == "descending") {
+            Collections.sort(ModelForPlantsLists, ModelForPlantList.By_TITLE_DESCENDING)
         }
-        else if (msortSettings.equals("descending")){
-            Collections.sort(ModelForPlantsLists, ModelForPlantList.By_TITLE_DESCENDING);
-        }
-
-
-
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        myAdapter = new AdapterForPlantList(this, ModelForPlantsLists);
-        mRecyclerView.setAdapter(myAdapter);
+        mRecyclerView!!.layoutManager = LinearLayoutManager(this)
+        myAdapter = AdapterForPlantList(this, ModelForPlantsLists)
+        mRecyclerView!!.adapter = myAdapter
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.plant_list_menu, menu);
-        MenuItem item = menu.findItem(R.id.action_search);
-        SearchView searchView = (SearchView) MenuItemCompat.getActionView(item);
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                myAdapter.getFilter().filter(query);
-                return false;
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.plant_list_menu, menu)
+        val item = menu.findItem(R.id.action_search)
+        val searchView = MenuItemCompat.getActionView(item) as SearchView
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String): Boolean {
+                myAdapter!!.getFilter().filter(query)
+                return false
             }
 
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                myAdapter.getFilter().filter(newText);
-                return false;
+            override fun onQueryTextChange(newText: String): Boolean {
+                myAdapter!!.getFilter().filter(newText)
+                return false
             }
-        });
-        return true;
+        })
+        return true
     }
 
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.action_sort){
-            showSortDialog();
-            return true;
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val id = item.itemId
+        if (id == R.id.action_sort) {
+            showSortDialog()
+            return true
         }
-        return super.onOptionsItemSelected(item);
+        return super.onOptionsItemSelected(item)
     }
 
-    private void showSortDialog() {
-        String[] option = {"Ascending", "Descending"};
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Sort By?");
-        builder.setIcon(R.drawable.ic_action_sort);
-        builder.setItems(option, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                if (which == 0) {
-                    SharedPreferences.Editor editor = pref.edit();
-                    editor.putString("Sort", "ascending");
-                    editor.apply();
-                    showData();
-                }
-                if (which == 1) {
-                    SharedPreferences.Editor editor = pref.edit();
-                    editor.putString("Sort", "descending");
-                    editor.apply();
-                    showData();
-                }
+    private fun showSortDialog() {
+        val option = arrayOf("Ascending", "Descending")
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Sort By?")
+        builder.setIcon(R.drawable.ic_action_sort)
+        builder.setItems(option) { dialog, which ->
+            if (which == 0) {
+                val editor = pref!!.edit()
+                editor.putString("Sort", "ascending")
+                editor.apply()
+                showData()
             }
-        });
-        builder.create().show();
+            if (which == 1) {
+                val editor = pref!!.edit()
+                editor.putString("Sort", "descending")
+                editor.apply()
+                showData()
+            }
+        }
+        builder.create().show()
     }
 
     // To apply transition when back is pressed
-    @Override
-    public void finish() {
-        super.finish();
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right);
+    override fun finish() {
+        super.finish()
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_right)
     }
 }

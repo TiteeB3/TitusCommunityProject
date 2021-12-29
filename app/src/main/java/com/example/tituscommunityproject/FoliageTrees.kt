@@ -69,12 +69,12 @@ class FoliageTrees : AppCompatActivity() {
         val ModelForPlantsLists = ArrayList<ModelForPlantList>()
 
 
-        ////CHECK THE NUMBERING WELL
-        //1//
+
+//        Will update this list
+
         var p = ModelForPlantList()
         p.title = "Adenanthera pavonina"
-        p.description =
-            "LIFE CYCLE: Perennial  GROWING ZONE: Tropical      LEAF TYPE: Simple    FRUITING: Yes   MATURED HEIGHT:            LEAF SHAPE: Elliptical, Lanceolate, Oblong              LEAF MARGIN:  Entire       LEAF LENGTH:  6 inches        LEAF COLOR:  Green, Variegated                   LEAF ARRANGEMENT:  Alternate            STEM CHARACTERISTICS:  Stem color is gray or silver, it has no aroma. It is also Erect, becoming decumbent, encircled with leaf scars."
+        p.description = "LIFE CYCLE: Perennial  GROWING ZONE: Tropical      LEAF TYPE: Simple    FRUITING: Yes   MATURED HEIGHT:            LEAF SHAPE: Elliptical, Lanceolate, Oblong              LEAF MARGIN:  Entire       LEAF LENGTH:  6 inches        LEAF COLOR:  Green, Variegated                   LEAF ARRANGEMENT:  Alternate            STEM CHARACTERISTICS:  Stem color is gray or silver, it has no aroma. It is also Erect, becoming decumbent, encircled with leaf scars."
         p.img = R.drawable.adenantherapavonina
         p.imageView3 = R.drawable.secondpicture
         p.common_name = "Bead tree"
@@ -87,10 +87,11 @@ class FoliageTrees : AppCompatActivity() {
         p.common_disease_and_infection = ""
         p.pronounce_botanical_name = "{}"
         ModelForPlantsLists.add(p)
+
+
         p = ModelForPlantList()
         p.title = "Albizia saman (Pithecellobium samam)"
-        p.description =
-            "LIFE CYCLE: Perennial  GROWING ZONE: Tropical      LEAF TYPE: Simple    FRUITING: Yes   MATURED HEIGHT:            LEAF SHAPE: Elliptical, Lanceolate, Oblong              LEAF MARGIN:  Entire       LEAF LENGTH:  6 inches        LEAF COLOR:  Green, Variegated                   LEAF ARRANGEMENT:  Alternate            STEM CHARACTERISTICS:  Stem color is gray or silver, it has no aroma. It is also Erect, becoming decumbent, encircled with leaf scars."
+        p.description = "LIFE CYCLE: Perennial  GROWING ZONE: Tropical      LEAF TYPE: Simple    FRUITING: Yes   MATURED HEIGHT:            LEAF SHAPE: Elliptical, Lanceolate, Oblong              LEAF MARGIN:  Entire       LEAF LENGTH:  6 inches        LEAF COLOR:  Green, Variegated                   LEAF ARRANGEMENT:  Alternate            STEM CHARACTERISTICS:  Stem color is gray or silver, it has no aroma. It is also Erect, becoming decumbent, encircled with leaf scars."
         p.img = R.drawable.albiziasaman
         p.imageView3 = R.drawable.secondpicture
         p.common_name = "Rain tree"
@@ -105,11 +106,9 @@ class FoliageTrees : AppCompatActivity() {
         ModelForPlantsLists.add(p)
 
 
-        //2. CHECK AGAIN//
         p = ModelForPlantList()
         p.title = "Artocarpus incisus"
-        p.description =
-            "LIFE CYCLE: Perennial  GROWING ZONE: Tropical      LEAF TYPE: Simple    FRUITING: Yes   MATURED HEIGHT:            LEAF SHAPE: Elliptical, Lanceolate, Oblong              LEAF MARGIN:  Entire       LEAF LENGTH:  6 inches        LEAF COLOR:  Green, Variegated                   LEAF ARRANGEMENT:  Alternate            STEM CHARACTERISTICS:  Stem color is gray or silver, it has no aroma. It is also Erect, becoming decumbent, encircled with leaf scars."
+        p.description = "LIFE CYCLE: Perennial  GROWING ZONE: Tropical      LEAF TYPE: Simple    FRUITING: Yes   MATURED HEIGHT:            LEAF SHAPE: Elliptical, Lanceolate, Oblong              LEAF MARGIN:  Entire       LEAF LENGTH:  6 inches        LEAF COLOR:  Green, Variegated                   LEAF ARRANGEMENT:  Alternate            STEM CHARACTERISTICS:  Stem color is gray or silver, it has no aroma. It is also Erect, becoming decumbent, encircled with leaf scars."
         p.img = R.drawable.artocarpusincisus
         p.imageView3 = R.drawable.secondpicture
         p.common_name = "Bread fruit/ bread nut tree"
@@ -122,6 +121,25 @@ class FoliageTrees : AppCompatActivity() {
         p.common_disease_and_infection = ""
         p.pronounce_botanical_name = "{}"
         ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Artocarpus incisus"
+        p.description = "LIFE CYCLE: Perennial  GROWING ZONE: Tropical      LEAF TYPE: Simple    FRUITING: Yes   MATURED HEIGHT:            LEAF SHAPE: Elliptical, Lanceolate, Oblong              LEAF MARGIN:  Entire       LEAF LENGTH:  6 inches        LEAF COLOR:  Green, Variegated                   LEAF ARRANGEMENT:  Alternate            STEM CHARACTERISTICS:  Stem color is gray or silver, it has no aroma. It is also Erect, becoming decumbent, encircled with leaf scars."
+        p.img = R.drawable.artocarpusincisus
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Bread fruit/ bread nut tree"
+        p.family = "Moraceae"
+        p.method_of_propagation = "Seed"
+        p.uses_or_type = "Specimen plants"
+        p.condition = ""
+        p.serial_numbers = "003"
+        p.origin = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = "{}"
+        ModelForPlantsLists.add(p)
+
+
         val msortSettings = pref!!.getString("Sort", "ascending")
         if (msortSettings == "ascending") {
             Collections.sort(ModelForPlantsLists, ModelForPlantList.By_TITLE_ASCENDING)
