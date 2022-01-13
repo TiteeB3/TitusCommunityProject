@@ -1,26 +1,22 @@
 package com.example.tituscommunityproject
 
-import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.RecyclerView
-import com.example.tituscommunityproject.AdapterForPlantList
 import android.content.SharedPreferences
-import android.util.DisplayMetrics
-import android.view.WindowManager
-import android.os.Bundle
-import com.example.tituscommunityproject.R
-import android.graphics.drawable.ColorDrawable
-import com.example.tituscommunityproject.ModelForPlantList
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.core.view.MenuItemCompat
-import android.content.DialogInterface
 import android.content.res.Configuration
 import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
+import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.WindowManager
 import android.widget.SearchView
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.MenuItemCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import java.util.*
+
 
 class FloweringTrees : AppCompatActivity() {
     var mRecyclerView: RecyclerView? = null
@@ -69,8 +65,7 @@ class FloweringTrees : AppCompatActivity() {
         val ModelForPlantsLists = ArrayList<ModelForPlantList>()
 
 
-        ////CHECK THE NUMBERING WELL
-        //1//
+//        LIST OF PLANTS ///
         var p = ModelForPlantList()
         p.title = "Acacia auriculiformis"
         p.img = R.drawable.acaciaauriculiforis
@@ -88,6 +83,9 @@ class FloweringTrees : AppCompatActivity() {
         p.common_disease_and_infection = ""
         p.pronounce_botanical_name = ""
         ModelForPlantsLists.add(p)
+
+
+
         p = ModelForPlantList()
         p.title = "Bauhinia purpurea"
         p.img = R.drawable.bauhiniapupurea
@@ -106,8 +104,6 @@ class FloweringTrees : AppCompatActivity() {
         p.pronounce_botanical_name = ""
         ModelForPlantsLists.add(p)
 
-
-        //2. CHECK AGAIN//
         p = ModelForPlantList()
         p.title = "Bauhinia variegata"
         p.img = R.drawable.bauhiniavariegata
@@ -125,6 +121,299 @@ class FloweringTrees : AppCompatActivity() {
         p.common_disease_and_infection = ""
         p.pronounce_botanical_name = ""
         ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Bauhinia tomentosa"
+        p.img = R.drawable.bauhiniatomentosa
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Yellow bauhinia"
+        p.family = "Fabaceae"
+        p.method_of_propagation = "Seed"
+        p.uses_or_type = "Specimen, Hedges, Shelter belts"
+        p.condition = ""
+        p.serial_numbers = "004"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = ""
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Bauhinia galpinii"
+        p.img = R.drawable.bauhiniagalpinii
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Red bauhinia"
+        p.family = "Fabaceae"
+        p.method_of_propagation = "Seed"
+        p.uses_or_type = "Shelter, Hedges, Avenue trees"
+        p.condition = ""
+        p.serial_numbers = "005"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = ""
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Bauhinia purpurea"
+        p.img = R.drawable.bauhiniapupurea
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Purple Bauhinia"
+        p.family = "Fabaceae"
+        p.method_of_propagation = "Seed"
+        p.uses_or_type = "Shelter, Hedges, Avenue trees"
+        p.condition = ""
+        p.serial_numbers = "006"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = ""
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Calliandra surinamensis"
+        p.img = R.drawable.calliandrasurinamensis
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Pink Powder Puff"
+        p.family = "Fabaceae"
+        p.method_of_propagation = "Seed"
+        p.uses_or_type = "Specimen plants, Avenue trees"
+        p.condition = ""
+        p.serial_numbers = "007"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = ""
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Cassia fistula"
+        p.img = R.drawable.cassiafistula
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Golden shower"
+        p.family = "Fabaceae"
+        p.method_of_propagation = "Seed, Stem cutting"
+        p.uses_or_type = "Specimen plants, Avenue trees"
+        p.condition = ""
+        p.serial_numbers = "008"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = ""
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Cassia nodosa"
+        p.img = R.drawable.cassianodosa
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Pink cassia"
+        p.family = "Caesalpinoideae"
+        p.method_of_propagation = "Seed, cutting"
+        p.uses_or_type = "Specimen plants, Avenue trees"
+        p.condition = ""
+        p.serial_numbers = "009"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = ""
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Cassia spectabilis"
+        p.img = R.drawable.cassiaspectabilis
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Yellow cassia"
+        p.family = "Caesalpinoideae"
+        p.method_of_propagation = "Seed, cutting"
+        p.uses_or_type = "Specimen plants, Avenue trees"
+        p.condition = ""
+        p.serial_numbers = "010"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = ""
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Erythrina indica"
+        p.img = R.drawable.erythrinaindica
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Indian coral tree"
+        p.family = "Papilionaceae"
+        p.method_of_propagation = "Seed, cutting"
+        p.uses_or_type = "Specimen plants, Avenue trees"
+        p.condition = ""
+        p.serial_numbers = "011"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = ""
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Erythrina variegata"
+        p.img = R.drawable.erythrinavarigata
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Indian coral tree"
+        p.family = "Papilionaceae"
+        p.method_of_propagation = "Seed, cutting"
+        p.uses_or_type = "Specimen plants, Avenue trees"
+        p.condition = ""
+        p.serial_numbers = "012"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = ""
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Jacaranda mimosifolia"
+        p.img = R.drawable.jacarandamimosifolia
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Jacaranda"
+        p.family = "Bignoniaceae"
+        p.method_of_propagation = "Stem cuttings/seed"
+        p.uses_or_type = "Avenue/ Specimen planting"
+        p.condition = "Bright light but some direct sun is beneficial"
+        p.serial_numbers = "013"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = ""
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Lagerstroemia speciosa"
+        p.img = R.drawable.lagerstroemiaspeciosa
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Queen flower or pride of India"
+        p.family = "Lythraceae"
+        p.method_of_propagation = "Seed, cutting"
+        p.uses_or_type = "Specimen plants, Avenue trees"
+        p.condition = ""
+        p.serial_numbers = "014"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = ""
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Milletia thonningii"
+        p.img = R.drawable.milletiathonningii1
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Indian Cork Tree"
+        p.family = "Bignoniaceae"
+        p.method_of_propagation = "Suckers"
+        p.uses_or_type = "Specimen plants, Avenue trees"
+        p.condition = ""
+        p.serial_numbers = "015"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = ""
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Moringa oleifera"
+        p.img = R.drawable.moringaoleifera
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Drumstick tree/ Horseradish tree"
+        p.family = "Moringaceae"
+        p.method_of_propagation = "Seed"
+        p.uses_or_type = "Specimen plants"
+        p.condition = ""
+        p.serial_numbers = "016"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = ""
+        ModelForPlantsLists.add(p)
+
+
+
+
+        p = ModelForPlantList()
+        p.title = "Peltophorum pterocarpum"
+        p.img = R.drawable.peltophorumpterocarpum
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Rust Tree"
+        p.family = "Fabaceae"
+        p.method_of_propagation = "Seed"
+        p.uses_or_type = "Specimen at times shade"
+        p.condition = ""
+        p.serial_numbers = "017"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = ""
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Plumeria alba"
+        p.img = R.drawable.plumeriaalba
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Frangipani/ Forget-me-not"
+        p.family = "Apocynaceae"
+        p.method_of_propagation = "Stem cutting"
+        p.uses_or_type = "Specimen tree"
+        p.condition = ""
+        p.serial_numbers = "018"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = ""
+        ModelForPlantsLists.add(p)
+
+
+
+
+
+
         val msortSettings = pref!!.getString("Sort", "ascending")
         if (msortSettings == "ascending") {
             Collections.sort(ModelForPlantsLists, ModelForPlantList.By_TITLE_ASCENDING)
