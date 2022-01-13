@@ -1,26 +1,23 @@
 package com.example.tituscommunityproject
 
-import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.RecyclerView
-import com.example.tituscommunityproject.AdapterForPlantList
 import android.content.SharedPreferences
-import android.util.DisplayMetrics
-import android.view.WindowManager
-import android.os.Bundle
-import com.example.tituscommunityproject.R
-import android.graphics.drawable.ColorDrawable
-import com.example.tituscommunityproject.ModelForPlantList
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.core.view.MenuItemCompat
-import android.content.DialogInterface
 import android.content.res.Configuration
 import android.graphics.Color
+import android.graphics.ColorSpace
+import android.graphics.drawable.ColorDrawable
+import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.WindowManager
 import android.widget.SearchView
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.MenuItemCompat
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import java.util.*
+
 
 class ClimbingPlants : AppCompatActivity() {
     var mRecyclerView: RecyclerView? = null
@@ -69,8 +66,8 @@ class ClimbingPlants : AppCompatActivity() {
         val ModelForPlantsLists = ArrayList<ModelForPlantList>()
 
 
-        ////CHECK THE NUMBERING WELL
-        //1//
+//        LIST OF PLANTS///
+
         var p = ModelForPlantList()
         p.title = "Allamanda cathartica"
         p.description =
@@ -91,6 +88,8 @@ class ClimbingPlants : AppCompatActivity() {
         p.pronounce_botanical_name = "{al-ah-MAN-dah kah-THAR-tik-ah}"
         p.serial_numbers = "001"
         ModelForPlantsLists.add(p)
+
+
         p = ModelForPlantList()
         p.title = "Allamanda violacea"
         p.description =
@@ -113,7 +112,6 @@ class ClimbingPlants : AppCompatActivity() {
         ModelForPlantsLists.add(p)
 
 
-        //2. CHECK AGAIN//
         p = ModelForPlantList()
         p.title = "Antigonon leptopus"
         p.img = R.drawable.antigononleptopus
@@ -132,6 +130,246 @@ class ClimbingPlants : AppCompatActivity() {
         p.common_disease_and_infection = ""
         p.pronounce_botanical_name = "{}"
         ModelForPlantsLists.add(p)
+
+
+        p.title = "Antigonon leptopus var alba"
+        p.img = R.drawable.antigononleptopusvaralba
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Corallita"
+        p.family = "Polygonaceae"
+        p.method_of_propagation = "Seed, Cutting, Tubers and layering"
+        p.uses_or_type =
+            "Suitable for pergolas, Archways and Verandah gardening ,Specimen plants, Climbers,  Climbing plants"
+        p.condition = ""
+        p.serial_numbers = "004"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = "{}"
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Asparagus plumosus"
+        p.description =
+            "LIFE CYCLE: Perennial  GROWING ZONE: Tropical and subtropical    LEAF TYPE: Compound    FRUITING: Yes (high fruits)    MATURED HEIGHT: 24 inches      LEAF SHAPE: Acicular.        LEAF MARGIN:  Entire.       LEAF LENGTH: 0.75 to 1 inch      LEAF COLOR: Green.            LEAF ARRANGEMENT:   Alternate       STEM CHARACTERISTICS: Stem emerges directly from the ground and become woody and spiny."
+        p.img = R.drawable.asparagusplumosus
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Asparagus fern, Foxtail fern"
+        p.family = "Asparagaceae"
+        p.origin = "South Africa"
+        p.special_advantage_or_disadvantage =
+            "Poisonous (This plant renders a low toxicity if eaten)"
+        p.condition =
+            "Needs a well-drained soil. Sandy to loamy soil best, relatively high nitrogen requirement."
+        p.uses_or_type =
+            "Cut foliage, Medicinal plants, Ground covers, Accents, Border plants, Indoors, Climbers, Climbing plants, House plants."
+        p.method_of_propagation = "Division (dividing the clumps)/ Seed"
+        p.common_disease_and_infection =
+            "Root rot if soil poorly drained. Be careful not to allow intrusion of Bermuda grass."
+        p.pronounce_botanical_name = "{Ass-SPAR-uh-gus Plu-Mos-sus }"
+        p.serial_numbers = "005 "
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Bougainvillea glabra"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.img = R.drawable.bougainvilleaglabra
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Wax begonia/ Purple bougainvillea/ Paper flowe"
+        p.family = "Nyctaginaceae"
+        p.method_of_propagation = "Hardwood cutting/ Air layering"
+        p.uses_or_type =
+            "Cut flowers, Specimen, Flowering house plants, Flowering shrubs, Climbers, Climbing plants"
+        p.condition = "Usually trained to grow up walls and over arches trellis."
+        p.serial_numbers = "006"
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = "{Ah-SKLEE-pee-us Kur-ah-SAV-ih-kah}"
+        ModelForPlantsLists.add(p)
+
+        p = ModelForPlantList()
+        p.title = "Bougainvillea spectabillis"
+        p.img = R.drawable.bougainvilleaspectabillis
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Paper flower (Red, Orange, Pink, White)"
+        p.family = "Nyctaginaceae"
+        p.method_of_propagation = "Hardwood cutting, Air layering"
+        p.uses_or_type = "Flowering house plants, Flowering shrubs, Climbers, Climbing plants"
+        p.condition =
+            "Usually trained to grow up walls and over arches trellis. Cut flowers/ Specimen"
+        p.serial_numbers = "007"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = "{}"
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Clerodendron thomsonii"
+        p.img = R.drawable.clerodendronthomsonii
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Bleeding heart"
+        p.family = "Verbenaceae"
+        p.method_of_propagation = "Hard wood cutting"
+        p.uses_or_type = "Suitable as a climber, Climbers, Climbing plants"
+        p.condition = ""
+        p.serial_numbers = "008"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = "{}"
+        ModelForPlantsLists.add(p)
+
+
+
+        p = ModelForPlantList()
+        p.title = "Monstera deliciosa"
+        p.img = R.drawable.monsteradeliciosa
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Swiss cheese plant/ Split leaf philodendron/ Ceriman"
+        p.family = "Araceae"
+        p.method_of_propagation = "Air layering/ Cuttings/ Suckers"
+        p.uses_or_type = "Foliage house plant, Creeper, Climbing plants, Climbers"
+        p.condition = ""
+        p.serial_numbers = "009"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = "{}"
+        ModelForPlantsLists.add(p)
+
+        //CHECK AGAIN//
+
+        //CHECK AGAIN//
+        p = ModelForPlantList()
+        p.title = "Petrea volubilis"
+        p.img = R.drawable.petreavolubilis
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Purple wreath/blue bird vine"
+        p.family = "Verbenaceae"
+        p.method_of_propagation = "Layering, Cutting or Seed"
+        p.uses_or_type = "Climbers,Climbing plants, Useful in verandah gardening"
+        p.condition = ""
+        p.serial_numbers = "010"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = "{}"
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Scindapsus aureus"
+        p.img = R.drawable.scindapsusaureus
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Devil’s Ivy/ Golden Pothos"
+        p.family = "Araceae"
+        p.method_of_propagation = "Stem cuttings"
+        p.uses_or_type = "Foliage house plants, Climbers, Houseplants, Climbing plants"
+        p.condition = "Well lit but slues spot"
+        p.serial_numbers = "011"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = "{}"
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Solandra maxima"
+        p.img = R.drawable.solandramaxima
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Cup of gold"
+        p.family = "Solanaceae"
+        p.method_of_propagation = "Cuttings"
+        p.uses_or_type = "Climbing plants,  Climbers"
+        p.condition = ""
+        p.serial_numbers = "012"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = "{}"
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Thunbergia alata"
+        p.img = R.drawable.thumbergiaalata
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Black-eyed susan"
+        p.family = "Acanthaceae"
+        p.method_of_propagation = "Seed"
+        p.uses_or_type = "Flowering pot plants, Climbers, Houseplants, Climbing plants"
+        p.condition = "Bright light"
+        p.serial_numbers = "013"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = "{}"
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Ficus pumila"
+        p.img = R.drawable.ficuspumila
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Creeping fig"
+        p.family = "Moraceae"
+        p.method_of_propagation = "Stem cutting"
+        p.uses_or_type =
+            "Flowering pot plants, Climbers, Houseplants, Climbing plants, To cover up walls"
+        p.condition = "Bright light"
+        p.serial_numbers = "014"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = "{}"
+        ModelForPlantsLists.add(p)
+
+
+        p = ModelForPlantList()
+        p.title = "Tristellateia australasiae"
+        p.img = R.drawable.tristellateiaaustralasiae
+        p.imageView3 = R.drawable.secondpicture
+        p.common_name = "Galphimia vine"
+        p.family = "Malpighiaceae"
+        p.method_of_propagation = "Air layering"
+        p.uses_or_type = "Good screen"
+        p.condition = ""
+        p.serial_numbers = "015"
+        p.description =
+            "LIFE CYCLE:   GROWING ZONE:     LEAF TYPE:     FRUITING:     MATURED HEIGHT:       LEAF SHAPE:        LEAF MARGIN:         LEAF LENGTH:       LEAF COLOR:             LEAF ARRANGEMENT:        STEM CHARACTERISTICS:  "
+        p.origin = ""
+        p.special_advantage_or_disadvantage = ""
+        p.common_disease_and_infection = ""
+        p.pronounce_botanical_name = "{}"
+        ModelForPlantsLists.add(p)
+
+
+
         val msortSettings = pref!!.getString("Sort", "ascending")
         if (msortSettings == "ascending") {
             Collections.sort(ModelForPlantsLists, ModelForPlantList.By_TITLE_ASCENDING)
